@@ -1,4 +1,4 @@
-import { FaHome, FaNewspaper, FaGraduationCap, FaDoorOpen, FaFileAlt, FaList, FaDollarSign } from 'react-icons/fa'; // Import icons
+import { FaHome, FaNewspaper, FaGraduationCap, FaDoorOpen, FaFileAlt, FaList, FaDollarSign ,FaBook,FaFlask} from 'react-icons/fa'; // Import icons
 
 export const navItems = [
   {
@@ -43,5 +43,19 @@ export const navItems = [
       { title: "Requirements", path: "./requirements", icon: <FaList /> },
       { title: "Fees", path: "./fees", icon: <FaDollarSign /> },
     ],
+  },
+  {
+    id: 5,
+    title: "Library",
+    path: "./library",
+    cName: "nav-item",
+    icon: <FaBook />, // Add an appropriate icon
+  },
+  {
+    id: 6,
+    title: "Research",
+    path: "./research",
+    cName: "nav-item",
+    icon: <FaFlask />, // Add an appropriate icon
   },
 ];

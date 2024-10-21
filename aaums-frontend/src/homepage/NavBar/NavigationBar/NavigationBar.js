@@ -13,10 +13,10 @@ export default function NavigationBar() {
   };
   return (
     <nav className='navigationBar'>
-      <>
-      <img src={logo} alt="logo" />
-      <span className='Title'> ADDIS ABABA UNIVERSITY </span>
-      </>
+         <div className="nav-left">
+          <img src={logo} alt="logo" className="logo" />
+          <h3 className="title">ADDIS ABABA UNIVERSITY</h3>
+        </div>
       <ul className="nav-items">
         {navItems.map((item) => (
           <li
@@ -30,6 +30,9 @@ export default function NavigationBar() {
             {dropdown && item.submenu && <Dropdown items={item.submenu} />}
           </li>
         ))}
+          <li className="sign-in-btn">
+            <button className="sign-in">Sign In</button>
+          </li>
       </ul>
     </nav>
   );
