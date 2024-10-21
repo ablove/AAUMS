@@ -1,6 +1,6 @@
 
 import './App.css';
-import Main from './homepage/main';
+import Main from './homepage/Main/Main';
 function App() {
   return (
     <div className="App">
