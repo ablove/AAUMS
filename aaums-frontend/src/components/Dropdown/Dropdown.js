@@ -10,8 +10,11 @@ function Dropdown({items}) {
     <ul className="services-submenu">
     {items.map((item, index) => (
       <li key={index}>
-
-        <a href={item.path}>{item.icon}{item.title}</a>
+        <a href={item.path}>
+          {/* Display the icon */}
+          {item.icon} {/* Render the React Icon */}
+         {item.title}{/* Add margin for spacing */}
+        </a>
       </li>
     ))}
   </ul>

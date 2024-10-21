@@ -13,20 +13,21 @@ export default function NavigationBar() {
   };
   return (
     <nav className='navigationBar'>
+      <>
       <img src={logo} alt="logo" />
-      <h3 className='Title'> ADDIS ABABA UNIVERSITY </h3>
-      
+      <span className='Title'> ADDIS ABABA UNIVERSITY </span>
+      </>
       <ul className="nav-items">
         {navItems.map((item) => (
           <li
             key={item.id}
-            className="nav-item"
-            onMouseEnter={() => handleMouseEnter(item.submenu)}
-            onMouseLeave={() => setDropdown(null)}
+            className={item.cName}
+            onMouseEnter={() => setDropdown(item.submenu ? true : false)}
+            onMouseLeave={() => setDropdown(false)}
           >
-            {item.icon}
-            {item.title}
-            {dropdown && item.submenu && <Dropdown items={dropdown} />}
+            {item.icon} {/* Render the icon */}
+            {item.title}{/* Add spacing between icon and text */}
+            {dropdown && item.submenu && <Dropdown items={item.submenu} />}
           </li>
         ))}
       </ul>
