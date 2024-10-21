@@ -1,0 +1,75 @@
+/* Section container */
+.colleges-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: white;
+  }
+  
+  /* Grid container for cards */
+  .colleges-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Styling for individual cards */
+  .college-card {
+    position: relative;
+    background: linear-gradient(135deg, #6dd5fa, #2980b9);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .college-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+  }
+  
+  /* Image styling with controlled height */
+  .college-image {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure aspect ratio is maintained */
+  }
+  
+  /* Content container inside the card */
+  .college-content {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  /* College title */
+  .collegesTittle {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-clip: text;
+         
+    color : #3B7BBC
+    
+  }
+  
+  /* College description */
+  p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    line-height: 1.4;
+  }
+  
+  /* Icon styling */
+  .college-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
