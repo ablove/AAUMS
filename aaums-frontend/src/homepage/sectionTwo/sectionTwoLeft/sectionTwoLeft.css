@@ -1,0 +1,8 @@
+.background-container {
+    background-image: url('./images/Addis-Ababa-University.jpg'); 
+    background-position: center; /* Center the image */
+    background-size: cover; /* Make sure the image covers the entire container */
+    background-attachment: fixed;
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Ensure it covers the entire left section */
+  }
