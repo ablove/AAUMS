@@ -71,7 +71,7 @@
   .see-more-btn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-image: linear-gradient(to right, #3B7BBC, #52ade9);;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -81,5 +81,5 @@
   }
   
   .see-more-btn:hover {
-    background-color: #0056b3;
+    background-image: linear-gradient(to right, #52ade9, #3B7BBC);
   }
