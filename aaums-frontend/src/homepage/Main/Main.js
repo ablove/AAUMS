@@ -7,6 +7,7 @@ import SectionTwo from '../sectionTwo/SectionTwo'
 import Galary from '../Galary/Galary'
 import Gratuated from '../gratuated/Gratuated'
 import Footer from '../footer/Footer'
+import StudentTestimonials from '../StudentTestimonials/StudentTestimonials'
 export default function Main() {
   return (
     <div>
@@ -15,6 +16,7 @@ export default function Main() {
       <Colleges/>
       <SectionTwo/>
       <Galary/>
+      <StudentTestimonials/>
       <Gratuated/>
       <Footer/>
 
