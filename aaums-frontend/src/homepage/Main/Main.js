@@ -8,6 +8,7 @@ import Galary from '../Galary/Galary'
 import Gratuated from '../gratuated/Gratuated'
 import Footer from '../footer/Footer'
 import StudentTestimonials from '../StudentTestimonials/StudentTestimonials'
+import AlumniNetwork from '../AlumniNetwork/AlumniNetwork'
 export default function Main() {
   return (
     <div>
@@ -18,6 +19,7 @@ export default function Main() {
       <Galary/>
       <StudentTestimonials/>
       <Gratuated/>
+      <AlumniNetwork/>
       <Footer/>
 
     </div>
