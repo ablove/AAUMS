@@ -5,9 +5,9 @@ import Login from './Login/Login';
 function App() {
   return (
     <div className="App">
-    { /**    <Login/> **/}
-    <Main/> 
-  
+    { /**  <Main/>     **/}
+   
+    <Login/>
     </div>
   );
 }

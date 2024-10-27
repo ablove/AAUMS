@@ -30,7 +30,13 @@ export default function CardsforLogin() {
   ];
 
   return (
+    <div className='ContainerOfCard'>
+        <div className="styled-text">
+        <span className="initial">T</span>
+        <p>This portal is designed to provide services for students, applicants, academic staff, and for those who<br/> play management roles at Addis Ababa University.</p>
+      </div>
     <div className="container-of-cards">
+
       {cards.map((item, index) => (
         <div className="card" key={index}>
           <div className="card-image">
@@ -42,6 +48,7 @@ export default function CardsforLogin() {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 }
