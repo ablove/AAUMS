@@ -24,7 +24,7 @@ export default function NavigationBar({ flag }) {
             onMouseEnter={() => setDropdown(item.submenu ? true : false)}
             onMouseLeave={() => setDropdown(false)}
           >
-            <Link to={item.path}>
+            <Link className='Link' to={item.path}>
             {item.icon} {/* Render the icon */}
             {item.title} {/* Add spacing between icon and text */}
             </Link>
@@ -33,7 +33,7 @@ export default function NavigationBar({ flag }) {
         ))}
         {flag && ( // Conditional rendering using &&
           <li className="sign-in-btn">
-            <Link to="/login">
+            <Link className='Link' to="/login">
             <button className="sign-in">Sign In</button>
             </Link>
           </li>
