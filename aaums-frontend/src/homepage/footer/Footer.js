@@ -7,14 +7,14 @@ export default function Footer() {
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        {/* Archive Section */}
+    
         <div className="footer-section">
           <h3>ARCHIVE</h3>
           <select className="footer-select">
             <option>Select Month</option>
             <option>January</option>
             <option>February</option>
-            {/* Add more months as needed */}
+            
           </select>
         </div>
 

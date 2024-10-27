@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './StudentTestimonials.css';
 import { useSwipeable } from 'react-swipeable';
 import photo1 from './images/photo_2024-10-14_10-20-58.jpg';
-import photo2 from './images/photo_2024-10-14_10-20-58.jpg';
-import photo3 from'./images/photo_2024-10-14_10-20-58.jpg';
+import photo2 from './images/anmut.jpg';
+import photo3 from'./images/abe.jpg';
 
 export default function StudentTestimonials() {
   const testimonials = [

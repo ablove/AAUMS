@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    gap: 20px; /* Optional: space between the cards and form */
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container > * {
+    flex: 1;
+    max-width: 50%; 
+  }

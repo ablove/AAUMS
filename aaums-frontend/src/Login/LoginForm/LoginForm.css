@@ -1,0 +1,67 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  /* Logo styling */
+  .logo img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: solid  2px #3B7BBC; 
+  }
+  
+  /* Form container */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  /* Input group for icon and input alignment */
+  .input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  /* Icon inside input */
+  .input-icon {
+    font-size: 16px;
+    margin-right: 8px;
+    color: #888;
+  }
+  
+  /* Input field styling */
+  .input-field {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  /* Login button styling */
+  .login-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #3B7BBC, #52ade9);;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-image: linear-gradient(to right, #52ade9, #3B7BBC);
+  }

@@ -12,7 +12,7 @@ import AlumniNetwork from '../AlumniNetwork/AlumniNetwork'
 export default function Main() {
   return (
     <div>
-      <NavigationBar/>
+      <NavigationBar flag={true} />
       <InfoPages />
       <Colleges/>
       <SectionTwo/>
