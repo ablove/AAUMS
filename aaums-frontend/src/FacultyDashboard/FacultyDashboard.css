@@ -1,0 +1,61 @@
+/* Main container for dashboard */
+.dashboard {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.dashboard-content {
+  display: flex;
+  width: 100%;
+}
+
+/* Main content styling */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Adjust main content margin based on sidebar state */
+.main-content.expanded {
+  margin-left: 250px; /* Expanded sidebar margin */
+}
+
+.main-content.collapsed {
+  margin-left: 70px; /* Collapsed sidebar margin */
+}
+
+/* Toggle button styling */
+.toggle-nav-button {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 250px; /* Right edge of expanded sidebar */
+  transform: translateY(-50%); /* Adjusts to vertical center */
+  background-color: #1e1e2f; /* Match sidebar background */
+  color: #bdbfcd; /* Match sidebar text color */
+  border: 1px solid #333; /* Border for subtle styling */
+  border-radius: 50%; /* Circular shape */
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1;
+  transition: left 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  outline: none;
+}
+
+/* Hover effect to blend with theme */
+.toggle-nav-button:hover {
+  background-color: #333; /* Slightly darker on hover */
+  color: #fff; /* Brighten text color */
+}
+
+/* Adjust button position when sidebar is collapsed */
+.dashboard .collapsed + .toggle-nav-button {
+  left: 70px; /* Right edge of collapsed sidebar */
+}
+
+
+
+
+

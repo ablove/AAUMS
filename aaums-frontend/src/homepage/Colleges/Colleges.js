@@ -11,6 +11,7 @@ import natural from './images/naturalSince.png';
 import veterinary from './images/veternary.png';
 import law from './images/law_hunmanty.png';
 import kk from './images/communication.png';
+
 const colleges = [
   {
     id: 1,
@@ -103,3 +104,6 @@ export default function Colleges() {
     </div>
   );
 }
+
+
+
