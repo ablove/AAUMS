@@ -1,5 +1,5 @@
 .vertical-nav {
-  background-color: #1e1e2f;
+  background-image: linear-gradient(to right, #3B7BBC, #52ade9);
   color: white;
   height: 100vh;
   width: 70px;
@@ -8,12 +8,13 @@
 }
 
 .vertical-nav.active {
-  width: 250px; /* Expanded width */
+  width: 250px; 
 }
 
-/* Navigation header */
+
 .nav-header {
   padding: 15px;
+  color: #ffffff; 
 }
 
 /* Menu styles */
@@ -23,42 +24,43 @@
   margin-top: 20px;
 }
 
-.nav-item {
+.navs-item {
   margin: 10px 0;
 }
 
-.nav-item a {
+.navs-item a {
   display: flex;
   align-items: center;
-  color: #bdbfcd;
+  color: #e0e8f0; 
   text-decoration: none;
   padding: 10px 20px;
   transition: background 0.3s ease, color 0.3s ease;
   border-radius: 4px;
 }
 
-.nav-item a:hover {
-  background-color: #333;
+.navs-item a:hover {
+  background-image: linear-gradient(to right, #3B7BBC, #52ade9); 
   color: white;
 }
 
-.nav-item a.active {
-  background-color: #333;
+.navs-item a.active {
+  background-image: linear-gradient(to right,#45A1C3, #36a8d1); 
   color: white;
 }
 
-.nav-icon {
+.navs-icon {
   font-size: 20px;
   margin-right: 10px;
+  color: #ffffff;
 }
 
-.nav-label {
+.navs-label {
   font-size: 16px;
   font-weight: 500;
   transition: opacity 0.3s ease;
   opacity: 1;
+  color: #ffffff;
 }
-
 .vertical-nav:not(.active) .nav-label {
   opacity: 0;
   display: none;

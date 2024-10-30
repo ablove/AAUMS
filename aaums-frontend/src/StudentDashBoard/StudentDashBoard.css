@@ -32,9 +32,8 @@
     top: 50%; /* Center vertically */
     left: 250px; /* Right edge of expanded sidebar */
     transform: translateY(-50%); /* Adjusts to vertical center */
-    background-color: #1e1e2f; /* Match sidebar background */
+    background-image: linear-gradient(to right, #3B7BBC, #52ade9); /* Match sidebar background */
     color: #bdbfcd; /* Match sidebar text color */
-    border: 1px solid #333; /* Border for subtle styling */
     border-radius: 50%; /* Circular shape */
     font-size: 18px;
     padding: 8px;
