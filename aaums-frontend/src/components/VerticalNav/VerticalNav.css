@@ -23,11 +23,11 @@
   margin-top: 20px;
 }
 
-.nav-item {
+.navs-item {
   margin: 10px 0;
 }
 
-.nav-item a {
+.navs-item a {
   display: flex;
   align-items: center;
   color: #bdbfcd;
@@ -37,22 +37,22 @@
   border-radius: 4px;
 }
 
-.nav-item a:hover {
+.navs-item a:hover {
   background-color: #333;
   color: white;
 }
 
-.nav-item a.active {
+.navs-item a.active {
   background-color: #333;
   color: white;
 }
 
-.nav-icon {
+.navs-icon {
   font-size: 20px;
   margin-right: 10px;
 }
 
-.nav-label {
+.navs-label {
   font-size: 16px;
   font-weight: 500;
   transition: opacity 0.3s ease;

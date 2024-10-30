@@ -10,10 +10,10 @@ const VerticalNav = ({ menuItems, userRole, isOpen }) => {
       </div>
       <ul className="nav-menu">
         {menuItems.map((item, index) => (
-          <li key={index} className="nav-item">
-            <NavLink to={item.path} activeClassName="active">
-              <i className={`${item.icon} nav-icon`}></i>
-              {isOpen && <span className="nav-label">{item.label}</span>}
+          <li key={index} className="navs-item">
+            <NavLink to={item.path} activeClassName="actives">
+              <i className={`${item.icon} navs-icon`}></i>
+              {isOpen && <span className="navs-label">{item.label}</span>}
             </NavLink>
           </li>
         ))}
