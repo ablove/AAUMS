@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import VerticalNav from '../components/VerticalNav/VerticalNav';
 import './StudentDashBoard.css';
-
+import NavigationBar from '../homepage/NavBar/NavigationBar/NavigationBar';
 const studentMenuItems = [
   { label: 'Profile', path: 'profile', icon: 'fas fa-user' },
   { label: 'Admissions', path: 'admissions', icon: 'fas fa-school' },
@@ -21,7 +21,10 @@ const StudentDashBoard = () => {
   };
 
   return (
+    <div>
+      <NavigationBar flag={false} />
     <div className="dashboard">
+     
       <div className="dashboard-content">
         <VerticalNav menuItems={studentMenuItems} userRole="Student" isOpen={isOpen} />
         
@@ -29,11 +32,11 @@ const StudentDashBoard = () => {
         <button className="toggle-nav-button" onClick={toggleNav}>
         <i className={`fas ${isOpen ? 'fa-chevron-left' : 'fa-chevron-right'}`}></i>
         </button>
-        
         <div className={`main-content ${isOpen ? 'expanded' : 'collapsed'}`}>
           <Outlet />
         </div>
       </div>
+    </div>
     </div>
   );
 };

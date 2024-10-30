@@ -21,7 +21,6 @@ export default function Main() {
       <Gratuated/>
       <AlumniNetwork/>
       <Footer/>
-
     </div>
   )
 }
