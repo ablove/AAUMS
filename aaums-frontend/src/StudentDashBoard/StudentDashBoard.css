@@ -1,55 +1,57 @@
-/* Main container for dashboard */
 .dashboard {
-    display: flex;
-    height: 100vh;
-    position: relative;
-  }
-  
-  .dashboard-content {
-    display: flex;
-    width: 100%;
-  }
-  
-  /* Main content styling */
-  .main-content {
-    flex: 1;
-    padding: 20px;
-    transition: margin-left 0.3s ease;
-  }
-  
-  /* Adjust main content margin based on sidebar state */
-  .main-content.expanded {
-    margin-left: 250px; /* Expanded sidebar margin */
-  }
-  
-  .main-content.collapsed {
-    margin-left: 70px; /* Collapsed sidebar margin */
-  }
-  
-  /* Toggle button styling */
-  .toggle-nav-button {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 250px; /* Right edge of expanded sidebar */
-    transform: translateY(-50%); /* Adjusts to vertical center */
-    background-image: linear-gradient(to right, #3B7BBC, #52ade9); /* Match sidebar background */
-    color: #bdbfcd; /* Match sidebar text color */
-    border-radius: 50%; /* Circular shape */
-    font-size: 18px;
-    padding: 8px;
-    cursor: pointer;
-    z-index: 1;
-    transition: left 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-    outline: none;
-  }
-  
-  /* Hover effect to blend with theme */
-  .toggle-nav-button:hover {
-    background-color: #333; /* Slightly darker on hover */
-    color: #fff; /* Brighten text color */
-  }
-  
-  /* Adjust button position when sidebar is collapsed */
-  .dashboard .collapsed + .toggle-nav-button {
-    left: 70px; /* Right edge of collapsed sidebar */
-  }
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styling */
+.dashboard-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: width 0.3s ease;
+  background-image: linear-gradient(to right, #3B7BBC, #52ade9);
+  overflow: hidden;
+}
+
+.dashboard-sidebar.open {
+  width: 250px; /* Expanded width */
+}
+
+.dashboard-sidebar.closed {
+  width: 70px; /* Collapsed width */
+}
+
+/* Toggle button styling inside sidebar */
+.toggle-nav-button {
+  margin: 20px;
+  background-image: linear-gradient(to right, #3B7BBC, #52ade9);
+  color: #bdbfcd;
+  border-radius: 50%;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  outline: none;
+}
+
+/* Hover effect */
+.toggle-nav-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Main content styling */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Adjust main content margin based on sidebar state */
+.main-content.expanded {
+  margin-left: 250px;
+}
+
+.main-content.collapsed {
+  margin-left: 70px;
+}
